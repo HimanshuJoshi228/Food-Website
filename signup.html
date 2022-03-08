@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tilicon Food</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.png">
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.png" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
-<body>
-    <div id="main_container">
-        <div>
-            <img src="images/logo/logo.png" alt="Tilicon Food Logo" id="logo">
+  <body>
+    <div class="container">
+      <div id="main_container">
+        <div class="left_container">
+          <!-- <h1>Hello World!!</h1> -->
+          <img src="https://source.unsplash.com/random/817x654/?food" alt="" />
         </div>
-        <div>
+        <div class="right_container">
+          <div>
+            <img src="images/logo/logo.png" alt="Tilicon Food Logo" id="logo" />
+          </div>
+          <div>
             <form action="" id="form">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter here..." required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="9876543210" maxlength="10"
-                    required>
+              <div class="username">
+                <label for="username">Username: </label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Enter here..."
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email">Email: </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="phone_number">
+                <label for="phone_number">Phone Number: </label>
+                <input
+                  type="tel"
+                  id="phone_number"
+                  name="phone_number"
+                  placeholder="9876543210"
+                  maxlength="10"
+                  required
+                />
+              </div>
+              <div class="gender">
                 <!-- <fieldset id="gender"> -->
-                    <label>Gender</label>
-                    <label for="male">
-                        <input type="radio" name="male" id="male">
-                        Male
-                    </label>
-                    <label for="female">
-                        <input type="radio" name="female" id="female">
-                        Female
-                    </label>
+                <label>Gender</label>
+                <div class="radioBtn">
+                  <label for="male">
+                    <input
+                      type="radio"
+                      name="male-female"
+                      id="male"
+                      value="male"
+                    />
+                    Male
+                  </label>
+                  <label for="female">
+                    <input
+                      type="radio"
+                      name="male-female"
+                      id="female"
+                      value="female"
+                    />
+                    Female
+                  </label>
+                </div>
                 <!-- </fieldset> -->
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="************" required>
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="************"
-                    required>
-                <input type="submit" id="submit" value="SIGN UP">
+              </div>
+              <div class="password">
+                <label for="password">Password: </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="************"
+                  required
+                />
+              </div>
+              <div class="confirm_password">
+                <label for="confirm_password">Confirm Password: </label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="************"
+                  required
+                />
+              </div>
+              <div class="btnDiv">
+                <button type="submit" id="submit">Sign Up</button>
+              </div>
+              <p><a href="login.html">Already have an account?</a></p>
             </form>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
